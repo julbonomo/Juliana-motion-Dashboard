@@ -9,6 +9,30 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/build/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
+	"/build/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "/build/build/node_modules",
+		"oF": 0
+		},
+	"/deploy/css/styles-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/deploy/css/styles-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/deploy/css/styles.css": {
 		"aP": 1,
 		"bl": 0,
@@ -26,6 +50,17 @@
 		"oA": 0,
 		"oAP": "/deploy/index.html",
 		"oF": 0
+		},
+	"/deploy/js/scripts-min-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/deploy/js/scripts-min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/deploy/js/scripts-min.js": {
 		"bF": 0,
@@ -45,24 +80,6 @@
 		"oA": 1,
 		"oAP": "/dev/content/svg-container.html",
 		"oF": 0
-		},
-	"/dev/design/Juliana-Motion-Spaceship.sketch": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/dev/design/Juliana-Motion-Spaceship.sketch",
-		"oF": 0
-		},
-	"/dev/design/Juliana-Motion-Spaceship.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/dev/design/Juliana-Motion-Spaceship.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 52780316221407,
-		"prP": 0
 		},
 	"/dev/global/footer.kit": {
 		"cB": 0,
@@ -94,6 +111,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/dev/global/scripts.html",
+		"oF": 0
+		},
+	"/dev/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/dev/index.html",
 		"oF": 0
 		},
 	"/dev/index.kit": {
@@ -269,6 +294,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/dev/scss/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/dev/scss/styles.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -344,10 +379,11 @@
 	},
 "projectAttributes": {
 	"creationDate": 642028179.03569198,
-	"displayValue": "Juliana-motion-rocket",
+	"displayValue": "Juliana-motion-dashboard-final",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets-payne",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 644260215.76884103
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

@@ -1,30 +1,30 @@
 //IMPORTS
-import { gsap } from "gsap";
-import { GSDevTools } from "gsap/GSDevTools";
-import { MotionPathPlugin } from "gsap/MotionPathPlugin";
+ //import { gsap } from "gsap";
+ //import { GSDevTools } from "gsap/GSDevTools";
+ //import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 
 //register Plugins
-gsap.registerPlugin(GSDevTools);
-gsap.registerPlugin(MotionPathPlugin);
+ //gsap.registerPlugin(GSDevTools);
+ //gsap.registerPlugin(MotionPathPlugin);
 // GSDevTools.create();
 
-gsap.set("#moon",{transformOrigin:"center"});
+ //gsap.set("#moon",{transformOrigin:"center"});
 
-let mainTL = gsap.timeline();
+ //let mainTL = gsap.timeline();
 
-mainTL.from("#stars path", {scale:2, repeat:-1, yoyo:true, duration:1}, "sky")
-      .to("#moon", {rotate:30, repeat:-1, yoyo:true, duration:5}, "sky")
-      .to("#glow", {alpha:0, repeat:-1, yoyo:true, duration:2.5}, "sky")
-      .from("#spaceship", {y:"+=400", duration:2}, "fly")
-      .from("#spaceshipsmoke", {y:"+=400", duration:2}, "fly")
-      .from("#smoke1", {y:"+=200", scale:0, duration:0.25})
-      .from("#smoke2", {y:"+=200", scale:0, duration:0.25}, "-=0.5")
-      .from("#smoke3", {y:"+=450", scale:0, duration:0.25}, "-=0.75")
-      .to("#spaceshipsmoke", {y:"+=400", alpha:0, duration:0.75})
-      .to("#smoke1", {y:"+=200", alpha:0, duration:0.75})
-      .to("#smoke2", {y:"+=200", alpha:0, duration:0.75})
-      .to("#smoke3", {y:"+=450", alpha:0, duration:0.75})
-      .to("#spaceship", {duration: 5, motionPath: {path: "#spaceshippath", align:"#spaceshippath", alignOrigin: [0.5, 0.5], autoRotate: 90}, ease: "none", scale:0.5}, "-=3");
+//mainTL.from("#stars path", {scale:2, repeat:-1, yoyo:true, duration:1}, "sky")
+     // .to("#moon", {rotate:30, repeat:-1, yoyo:true, duration:5}, "sky")
+     // .to("#glow", {alpha:0, repeat:-1, yoyo:true, duration:2.5}, "sky")
+     // .from("#spaceship", {y:"+=400", duration:2}, "fly")
+     // .from("#spaceshipsmoke", {y:"+=400", duration:2}, "fly")
+     // .from("#smoke1", {y:"+=200", scale:0, duration:0.25})
+     // .from("#smoke2", {y:"+=200", scale:0, duration:0.25}, "-=0.5")
+     // .from("#smoke3", {y:"+=450", scale:0, duration:0.25}, "-=0.75")
+      // .to("#spaceshipsmoke", {y:"+=400", alpha:0, duration:0.75})
+      // .to("#smoke1", {y:"+=200", alpha:0, duration:0.75})
+      // .to("#smoke2", {y:"+=200", alpha:0, duration:0.75})
+      // .to("#smoke3", {y:"+=450", alpha:0, duration:0.75})
+      // .to("#spaceship", {duration: 5, motionPath: {path: "#spaceshippath", align:"#spaceshippath", alignOrigin: [0.5, 0.5], autoRotate: 90}, ease: "none", scale:0.5}, "-=3");
 
 //**** SELECT ELEMENTS without jQuery ****\\
 
