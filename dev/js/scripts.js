@@ -13,6 +13,13 @@
  //let mainTL = gsap.timeline();
 
 //mainTL.from("#stars path", {scale:2, repeat:-1, yoyo:true, duration:1}, "sky")
+
+
+
+
+
+
+
      // .to("#moon", {rotate:30, repeat:-1, yoyo:true, duration:5}, "sky")
      // .to("#glow", {alpha:0, repeat:-1, yoyo:true, duration:2.5}, "sky")
      // .from("#spaceship", {y:"+=400", duration:2}, "fly")
