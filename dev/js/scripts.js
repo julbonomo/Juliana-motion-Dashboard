@@ -15,7 +15,9 @@ import {MorphSVGPlugin} from "gsap/MorphSVGPlugin";
 MorphSVGPlugin.convertToPath("D, ten, twenty, thirty");
  
 const mainTL = gsap.timeline({paused:true});
-
+let PERC = {num:0};
+//let PERC_num = $("#percentage_txt tspan");
+let PERC_num = document.querySelector("#battery tspan");
 //  let mainTL = gsap.timeline({id:"main"});
 
 // mainTL.from("#gray-background", {alpha:0, duration:5});
@@ -38,7 +40,7 @@ gsap.set("#logo", { transform0rigin:"50% 50%"});
 //       let mainTl = gsap.timeline();
 
 //logoFadeIn
-mainTL.from("#logo", {duration:3, scale:10, ease:"expo"})
+mainTL.from("#logo", {duration:3, scale:8, transformOrigin:"center", ease:"expo"})
       .to("#logo", {alpha:0, duration:2.5, ease:"back" })
 
 //rectangle left to right 
@@ -61,7 +63,8 @@ mainTL.from("#logo", {duration:3, scale:10, ease:"expo"})
 // //BatteryFadeIn
       .from("#battery", {alpha:0, y:"-50"},"battery")
       .from("#miles", {alpha:0, y:"-50"},"battery")
-  
+      .to(PERC, {duration:4, num:"+=88", roundProps:"num", onUpdate:percentHandler, ease:"expo"},"greenbar")
+      .from("#greenbar", {scaleX:0, duration:4, transform0rigin: "0 0"},"greenbar")
 
 // //PFadeIn
       .from("#P", {alpha:0})
@@ -75,9 +78,6 @@ mainTL.from("#logo", {duration:3, scale:10, ease:"expo"})
 //lightsON
       .from("#light-blur", {scale:0, transformOrigin:"50% 50%"})
 
-
-//songsFadeIn
-      .from ("#songs", {alpha:0, x:"-50"}, "songs")
 
 
 // //PMORPH to D
@@ -101,6 +101,16 @@ mainTL.from("#logo", {duration:3, scale:10, ease:"expo"})
       // .from("#twenty",{alpha:0},"mph")
       // .to("#ten",{duration:.5, morphSVG:"#twenty"}, "logomorph")
       // .to("#ten",{duration:.5, morphSVG:"#thirty"})
+
+//songsFadeIn
+      .from ("#missedcalls", {alpha:0, x:"-50"})
+      .from ("#bluebanisters", {alpha:0, x:"-50"})
+      .from ("#wayout", {alpha:0, x:"-50"})
+      .from ("#letitallout", {alpha:0, x:"-50"})
+      .from ("#oxygen", {alpha:0, x:"-50", scale:2})
+
+      // .to("#songchoice", {scale:5, transformOrigin:"center", duration:2}, "songchoice")
+
 
 
 //SongLine - playbuttons
@@ -136,5 +146,11 @@ mainTL.from("#logo", {duration:3, scale:10, ease:"expo"})
 // // mainTL.add(fadeInTL())
 
 mainTL.play();
+function percentHandler(){
 
+      //PERC_num.text(PERC.num);
+    
+      PERC_num.textContent=PERC.num +"%";
+    
+    }
 // // ;
